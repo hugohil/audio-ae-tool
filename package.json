@@ -1,7 +1,7 @@
 {
   "name": "audio-ae-tool",
   "version": "0.0.0",
-  "author": "hugohil <hilairehugo@gmail.com>",
+  "author": "hugohil",
   "description": "Extract audio datas and create AfterEffects keyframes from it",
   "license": null,
   "main": "./dist/electron/main.js",
