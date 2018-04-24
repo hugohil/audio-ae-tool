@@ -20,12 +20,13 @@ function createWindow () {
    * Initial window options
    */
   let options = {
-    height: 563,
+    width: 1280,
+    height: 720,
     useContentSize: true,
-    width: 1000
+    kiosk: (process.env.NODE_ENV !== 'development')
   }
 
-  options = require('assignment')(options, global.settings.window)
+  options = require('assignment')(global.settings.window, options)
   mainWindow = new BrowserWindow(options)
 
   mainWindow.loadURL(winURL)
